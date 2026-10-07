@@ -1,0 +1,8 @@
+{
+  "module": "submission_candidates.final_runtime_v1.cli",
+  "environment": {
+    "MONEY_MINER_FINAL_POLICY": "shrink",
+    "MONEY_MINER_TEXT_MODE": "off",
+    "MONEY_MINER_ADAPTATION_SECONDS": "180"
+  }
+}

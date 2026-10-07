@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0.0",
+  "interface_version": "2.0",
+  "competition_id": "agenthon2026-forecasting-verification",
+  "team_id": "team-example-0001",
+  "track": "forecasting",
+  "phase": "verification",
+  "category": "api",
+  "image": {
+    "registry": "docker.io",
+    "repository": "team-example/qfb2-forecaster",
+    "digest": "sha256:91e49d602a005f49d244ead74602bc8bc913ba23f85142d8e96309f501d57c2e"
+  },
+  "image_access": "public",
+  "models": [
+    {
+      "name": "example-api-model",
+      "version": "example-model-20260401",
+      "training_cutoff": "2026-01",
+      "access": "api",
+      "revision": "r1"
+    }
+  ],
+  "license": "Apache-2.0",
+  "descriptor_digest": "sha256:a5077b084145d23ef41f26c8f3dca6099f91b00d27ff0bd90353c6b44bf39300"
+}

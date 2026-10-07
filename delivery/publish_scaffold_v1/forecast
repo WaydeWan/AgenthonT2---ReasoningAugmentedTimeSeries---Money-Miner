@@ -1,0 +1,10 @@
+#!/usr/local/bin/python
+"""Launch one frozen configuration; no credentials or model choice here."""
+import json
+import os
+from pathlib import Path
+import sys
+
+config = json.loads(Path('/app/release-config.json').read_text(encoding='utf-8'))
+os.environ.update(config['environment'])
+os.execv(sys.executable, [sys.executable, '-m', config['module'], *sys.argv[1:]])

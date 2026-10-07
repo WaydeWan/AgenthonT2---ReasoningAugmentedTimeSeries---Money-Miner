@@ -1,0 +1,114 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://agenthon.net/qfbench2/schemas/analysis.schema.json",
+  "title": "QFBench 2.0 Track-4 tabular-prediction output (answer.json)",
+  "description": "Reasoning-augmented tabular prediction over entity rows. A unit may be classification (predict a label per entity), regression (predict a numeric value per entity), or ranking (order entities by a predicted score). One prediction per entity row lives in entity_predictions[]. Every prediction must carry >=1 evidence-grounded claim, and every claim cites a span in the frozen corpus; gate g3 runs the ensemble-NLI faithfulness judge and resolves each cited doc's date from the corpus for the embargo check. The card's target_type declares which task applies for this unit.",
+  "type": "object",
+  "required": ["task_id", "entity_predictions"],
+  "properties": {
+    "task_id": {"type": "string"},
+    "schema_version": {"type": "string"},
+    "target_type": {
+      "enum": ["classification", "regression", "ranking"],
+      "description": "Declares the prediction task; must match the card's target_type."
+    },
+    "entity_predictions": {
+      "type": "array",
+      "minItems": 1,
+      "description": "One prediction per entity row in q.json.",
+      "items": {
+        "type": "object",
+        "required": ["entity_id", "interval", "claims"],
+        "properties": {
+          "entity_id": {"type": "string"},
+          "label": {
+            "type": "string",
+            "description": "Predicted class for classification tasks (e.g. 'beat'/'miss'/'inline', 'credit_event'/'no_event'). Optional for regression/ranking."
+          },
+          "point_forecast": {
+            "type": "number",
+            "description": "Predicted value for regression, or the rank score for ranking. Optional confidence for classification."
+          },
+          "rank": {
+            "type": "integer",
+            "description": "1-based predicted rank for ranking tasks (1 = highest)."
+          },
+          "interval": {
+            "type": "object",
+            "required": ["level", "lo", "hi"],
+            "properties": {
+              "level": {"type": "number", "const": 0.90},
+              "lo": {"type": "number"},
+              "hi": {"type": "number"}
+            },
+            "description": "90% prediction interval. Required for every entity and all target_type values."
+          },
+          "claims": {
+            "type": "array",
+            "minItems": 1,
+            "description": "Evidence-grounded claims supporting this entity's prediction. Each claim bundles its text and one corpus citation.",
+            "items": {
+              "type": "object",
+              "required": ["doc_id", "span_start", "span_end", "claim"],
+              "properties": {
+                "doc_id": {"type": "string", "description": "ID of a document in the frozen corpus, or \"task\" for the unit's task table (Track 4 scorer 5.2.0: a span inside the citing entity's own row of the task table). A corpus document's doc_date is resolved from the corpus for the embargo gate (must be <= question cutoff)."},
+                "span_start": {"type": "integer", "minimum": 0},
+                "span_end": {"type": "integer", "minimum": 0},
+                "claim": {"type": "string"}
+              }
+            }
+          }
+        },
+        "allOf": [
+          {
+            "if": {"properties": {"rank": {"type": "integer"}}, "required": ["rank"]},
+            "then": {"required": ["point_forecast"]},
+            "description": "ranking entities carry a point_forecast (the rank score)."
+          }
+        ]
+      }
+    },
+    "evidence_trace": {
+      "type": ["string", "array"],
+      "items": {"type": "string"},
+      "description": "Free-text reasoning trace, or ordered doc_ids the agent retrieved/used."
+    },
+    "notes": {"type": "object", "description": "Optional free-form author notes (ignored by the scorer)."},
+    "submitted_reasons": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 3,
+      "description": "Optional. Up to three reasons for the answer, read by the reasoning grader (an LLM judge panel, separate from the analysis score and the faithfulness gate). Omit the field to submit no reasons; a missing reason scores 0 against every target reason. The judge sees each reason's premise, mechanism and answer_implication and the corpus text its citations resolve to, never scope or the raw citations. Published caps, per unit, over which the unit's reasoning is not judged and scores 0 (never clipped): each citation span_end - span_start <= 8000 characters; and three caps in UTF-8 bytes of the compact JSON the judge reads: your per-entity answer (entity_id and the declared answer fields) <= 3000 bytes, your reasons (reason_id, premise, mechanism, answer_implication) <= 6500 bytes, the cited passages (each passage's text with its doc_id, span_start, span_end and the reason_id citing it) <= 46500 bytes (together 56000 bytes). A reason with the same premise, mechanism and answer_implication as an earlier one is not judged. Citations resolve against the corpus only (doc_id \"task\" is for claims). Participant-written text must not contain the published deny-list phrases (URLs, file paths, identity or other-submission references); a premise that is wholly a verbatim quote of a corpus document is exempt.",
+      "items": {
+        "type": "object",
+        "required": ["reason_id", "premise", "mechanism", "answer_implication"],
+        "properties": {
+          "reason_id": {"type": "string"},
+          "premise": {"type": "string", "description": "The evidence-grounded fact."},
+          "mechanism": {"type": "string", "description": "Why that fact moves the answer."},
+          "answer_implication": {"type": "string", "description": "What the fact implies for the submitted answer, naming the entities."},
+          "scope": {
+            "type": "object",
+            "description": "Optional. The entities this reason is about. Not shown to the judge.",
+            "properties": {
+              "entities": {"type": "array", "items": {"type": "string"}, "description": "entity_id values from the task's roster."}
+            }
+          },
+          "citations": {
+            "type": "array",
+            "description": "Optional. Corpus passages behind this reason, in the same character-offset convention as claims. A citation that does not resolve in the frozen corpus, or whose document is dated after the cutoff, is never shown to the judge.",
+            "items": {
+              "type": "object",
+              "required": ["doc_id", "span_start", "span_end"],
+              "properties": {
+                "doc_id": {"type": "string"},
+                "span_start": {"type": "integer", "minimum": 0},
+                "span_end": {"type": "integer", "minimum": 0}
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

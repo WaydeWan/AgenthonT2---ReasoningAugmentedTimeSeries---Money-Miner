@@ -1,0 +1,516 @@
+{
+  "schema_version": "official-runtime-sources-v1",
+  "toolkit_version": "2.6.0",
+  "track_commit": "60509df4ad0756443f4af8dc9500aed99a995694",
+  "description": "Exact runtime package sources and required metadata/notices from previously audited pinned local official snapshots; no data, units, regression corpus, private repo, or tests. Hash algorithm is SHA256 of exact file bytes.",
+  "files": [
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/LICENSE",
+      "sha256": "6304c27bcbab46540acd7edb23314d77dc31c8f381b43b1a2fc55c51b9e6084b"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/README.md",
+      "sha256": "0785ed9b6a3e15fe20ac730a72fb5c99bb8a2c0169d6407942ac9bd7d6ab620c"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/pyproject.toml",
+      "sha256": "7945f5ed3efc31e76d0b93f912eddfee036cd963e801478af727e3c8a0dfc0af"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/__init__.py",
+      "sha256": "3a959349c0a89b44cfe655388305a736762ed5ee8a9fd5c42e7c34d158c2f821"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/cli.py",
+      "sha256": "c789d498f0cc1b5db2477789d3175e13a322a06d53f86561626b4ca12d5902c3"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/contracts/__init__.py",
+      "sha256": "5cd8f633062a216370cb80190e8d06ddb06c68e1b3bd38df21cce5644dc401e7"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/contracts/_ed25519.py",
+      "sha256": "111f110432a656be887826b81ff6c6c5bdcc70650f8a28971c50b4f99e71dc8d"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/contracts/_time.py",
+      "sha256": "3c09c26b8ffd59c3c184b9afeedcbed107c76c3b40b0276fc29ceddf52d253d7"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/contracts/artifact_tree.py",
+      "sha256": "7686058677e6c2f7fe7b7828053640af72f7858095f3cd79acd1bf3a883afed7"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/contracts/codes.py",
+      "sha256": "66689e988e45fc0cd769c2cbe6a1b485095310da9b30962ffa4c2df72515b922"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/contracts/descriptor.py",
+      "sha256": "f1618c00ffc610628514ce07f46cae60b21d87c76149dabbd40c7d15f7f065cd"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/contracts/devattest.py",
+      "sha256": "eb1cd69e2a6c9ae3de018beed1676190745bb3b2557f0add1a74938d5c09da16"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/contracts/digest.py",
+      "sha256": "dd7a6e4e6e9f3039a5bc78368114cf6d8d2249f2ef38fb94fd7575a7e1aa6560"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/contracts/errors.py",
+      "sha256": "e6bd0bfb2b03fbfeddd3122848721da7cb2c99573a400bd79a1ca1b1f44ba9cf"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/contracts/fixtures/__init__.py",
+      "sha256": "ab6db1d2052bf6171f955141971b22ecfd67095b6bd4fcb28da8de471382c9f3"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/contracts/fixtures/c1/analysis_final.expanded.json",
+      "sha256": "3716c80e1ea6ab6fa47c9f5115d39d99813bf0a184068a6e201c3718d5bfc89f"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/contracts/fixtures/c1/analysis_final.scorer-5.1.0.expanded.json",
+      "sha256": "3409f175a406b79378269a617e8d7f9cd9ebdd0c6f4d5755905e3f9c77de8557"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/contracts/fixtures/c1/coding_final.expanded.json",
+      "sha256": "f92daf4f29d4db9b272713f811cf1212c0f80499f7c98335a74c99f79b86ceb7"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/contracts/fixtures/c1/coding_final.public.json",
+      "sha256": "96746187b6a34c42ee2cd5dddd88e31d7c0d2f13f899279e1167196c85508fe5"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/contracts/fixtures/c1/forecasting_final.expanded.json",
+      "sha256": "513422a805cfdde4d3b37caae326e8bb029ff5ab293b8b36463f883b984ca62f"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/contracts/fixtures/c1/simulation_final.expanded.json",
+      "sha256": "4bdfd38e29f78acba6de3ea3d4413142d9ea6e43cb7cf744fd7edb7cf568c4e2"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/contracts/fixtures/c2_participant_refusal/invalid/refusal_with_execution_fault.json",
+      "sha256": "8e2fb69361031f2f74934e81eba4197cfaade142d27e8074853f3c9aa7ec19bb"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/contracts/fixtures/c2_participant_refusal/no_stable_output.json",
+      "sha256": "1851f1f6deb4ea0b8a37241a148fa19309340944d8209e2f11996dcb8fc15950"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/contracts/fixtures/c2_participant_refusal/null.json",
+      "sha256": "5f4e1f86548b2ef91769f705e2e4fc44e2ea7cb8fc0238b515c28ac2c7aca013"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/contracts/fixtures/c2_participant_refusal/output_refused.json",
+      "sha256": "f9ba6d6908402db73602fcacc0d9ed7b66278e9a279cc1dd2fb12fb1b2a51bab"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/contracts/fixtures/c2_participant_refusal/repeats_differ.json",
+      "sha256": "e216f90b331cd4624aa9c60037f71e6e99981e89d2d50c286983411ff044cba7"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/contracts/fixtures/c2_participant_refusal/sidecar_invalid.json",
+      "sha256": "278cadd67520df2f1b174d70055662588340693fa4155aa6d64315c2b73d5cab"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/contracts/fixtures/c2_participant_refusal/trace_missing.json",
+      "sha256": "a970862812daf594c526a29b49459a79adcd6d660040b15510674c174dd40f6b"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/contracts/fixtures/c2_run_record.json",
+      "sha256": "2d500865da129d02dc6dec925bff0ace7ad797b36f31d3a944e6bec5d4a773fa"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/contracts/fixtures/c3_artifact_tree.json",
+      "sha256": "3c4f2d7f09c1da105660c3cf258a73c5fe462c9e07eb49372deba5d66b292f8b"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/contracts/fixtures/c4_aggregate.json",
+      "sha256": "02022c096b4f5a4ad62c5bb5404e4b1ae223a329b5a02df8de0e068320c283d1"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/contracts/fixtures/c4_failure_code_registry.json",
+      "sha256": "afa31cd708ee68dee976b942534c3bd90f53d119f687c449245d5f9cefbb3571"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/contracts/fixtures/c4_unit_result.json",
+      "sha256": "88bdee06e3b74afd32cc1d4bb4c1c6a05e2acad798d4bf72fc26e9092aa35e38"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/contracts/fixtures/c4_unit_result_failure.json",
+      "sha256": "39d4d1944481c15467e34c8c8a08f83116458d16053f9d9ae57d672c19c1081c"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/contracts/fixtures/c5/analysis_dev.json",
+      "sha256": "b7d730393b6ae778e7d4a2849f13e9594cab31efe4e65ebf6456b92fe5643791"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/contracts/fixtures/c5/analysis_final.json",
+      "sha256": "78720e3ed7341ebd6f7c91290f91f2bdda7e53a2e7288ede235617ad49f2cc49"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/contracts/fixtures/c5/analysis_verification.json",
+      "sha256": "35718bbb58a4276c98601dac23a3ca8cd7edf42a425b8c4e5b6cef7c2399e545"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/contracts/fixtures/c5/coding_dev.json",
+      "sha256": "aa3821ef19f6a8ec6a4cb29224a039035e06bc14f9ebff10bddb55582214d721"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/contracts/fixtures/c5/coding_final.json",
+      "sha256": "bdae8be20f04597b5565497073a2fa6a2e17c7d74dc84ca919975eb8d2ddb595"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/contracts/fixtures/c5/coding_verification.json",
+      "sha256": "1826126858dfa3007e28c62be0c02e90baa400f39c11b8a2137b4bbea248aa4c"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/contracts/fixtures/c5/forecasting_dev.json",
+      "sha256": "53bbbba2fc6bb6725d5b406d3b22dbea063cb5fce5322009d9e26cc615eaa464"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/contracts/fixtures/c5/forecasting_final.json",
+      "sha256": "7e783fc9772445886b82ef35e6ab44efddd110ab5a042927904167cf3cf2691f"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/contracts/fixtures/c5/forecasting_verification.json",
+      "sha256": "3049871a74c14a1d2fa462800e24a6e6dc3c68c8bd65faa50bf60bd05e25b7e1"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/contracts/fixtures/c5/invalid/argv_injection_registry.json",
+      "sha256": "de415b202837d255ed01476102d78877f477c1bc148d14f61b9693fd84ca1622"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/contracts/fixtures/c5/invalid/bare_hex_image_digest.json",
+      "sha256": "396b36496014bf050fde6fa5b4c81c97a0ecd6d7044be8bb33884fcbc5b6b18e"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/contracts/fixtures/c5/invalid/category_not_in_enum.json",
+      "sha256": "edf5ae3e489d2cf6fafa9cb13aaeaa14d10b81ab0461bc2980ae1997449b15fd"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/contracts/fixtures/c5/invalid/image_as_free_string.json",
+      "sha256": "0cb4f214e1fa427bd94c608cf5f26ca8e41df46e8e4c08c12623bf2e71e88850"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/contracts/fixtures/c5/invalid/legacy_image_digest_field.json",
+      "sha256": "024ab1ed582ebc0b3ace30f37f2bafa5ec8aa2f3dcfdd00b3d75932b36fc66b8"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/contracts/fixtures/c5/invalid/legacy_model_disclosure.json",
+      "sha256": "b8b578ad465e4a63fd9e3e4cc55ceecd5cd3c4864c6e7c8796dd44878acc04b4"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/contracts/fixtures/c5/invalid/missing_category.json",
+      "sha256": "65b4cf05572f88061ad246f53875efb5474bb6fd901597c3544d4431ffd93a41"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/contracts/fixtures/c5/invalid/unknown_field.json",
+      "sha256": "59b5c2c6702285041d9028d0673b3f72357568ee520b82cfffdb8d1f9b7146cb"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/contracts/fixtures/c5/invalid/wrong_descriptor_digest.json",
+      "sha256": "28022982b01944d9fdd9f9dfbe9e06677015fe73fbb0c9e8929255062be2fd76"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/contracts/fixtures/c5/simulation_dev.json",
+      "sha256": "de6256e36d36fcf82934368d074339e5be1ae6b7ec429e11d9348435ecda5607"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/contracts/fixtures/c5/simulation_final.json",
+      "sha256": "c610f3ea386f89ce557cee5655629f19cf88671c31d1322cd1ac02ab2fd34b17"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/contracts/fixtures/c5/simulation_verification.json",
+      "sha256": "069f372a719fb1914eee4a00c507638841d7fd2eac6effaed890a1160c0cd0d1"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/contracts/fixtures/c6_resolver_descriptor.json",
+      "sha256": "88c7b04fc14d8afe8cebad9bb626058655ddede4246c296a2f55638317daafd5"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/contracts/fixtures/c6_sealed_handle.json",
+      "sha256": "3ad158fd2035b11aa701bc98b2dbef8ca0ced084798fd138dbf51c2c1f6c5561"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/contracts/fixtures/c7_hardware.json",
+      "sha256": "0c302ab2a66b9dabe2e3d51ddac4dd5d5deb52b0d1ad8aa211bdd733051db85c"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/contracts/fixtures/c7_hardware_unmeasured.json",
+      "sha256": "403269a7d49b55a36092833b14bc397bff41d65d8c8f9e47b2b9551c1517c7f1"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/contracts/fixtures/c7_worker_heartbeat.json",
+      "sha256": "cbc5ec7929a8fa6324e1e395a80d4d8a1f70275925ba0ac9feb583cbf9bbd019"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/contracts/fixtures/c8_release_evidence.json",
+      "sha256": "611800e07e64d28db0e68862c195b9f2c563692a5979d936457ea57f871dedd3"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/contracts/fixtures/dev_trust_store.json",
+      "sha256": "f46d7dec355cd88048c4c1106ab922c8815460d4bb0d78c90c23c0d5f7640371"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/contracts/fixtures/make_malicious_trees.py",
+      "sha256": "2de99ce109af0b5d7dd267612d2b4cae354ced237926b89c4f3ce9b712c83f24"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/contracts/forecast_protocol.py",
+      "sha256": "92cfb721f773cf155e4c9aa6b5ae377b477ee9a41361d5bbcd3717936653fc47"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/contracts/hardware.py",
+      "sha256": "17675a7f1925c7248732d455298d6dd92aef08823740885c2fc03f865693fc95"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/contracts/heartbeat.py",
+      "sha256": "7509ec64e55676bac2cf2218c7a9de051db1a39af16da29024130fa40f399361"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/contracts/plan.py",
+      "sha256": "f7ec0f0b6a15d98289da96b2fb1529e3fb8b2e66c1693e2cdfd8efb2972d0db3"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/contracts/release.py",
+      "sha256": "24cf5ba0910f6e0e247d8616573604b5936793fe4e01cf80cadaa4dfc403f6c1"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/contracts/result.py",
+      "sha256": "2a77c98eed9c8db12c6adb7d153c84b4ef7b421a494e7710ce321445167bb9b8"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/contracts/run_record.py",
+      "sha256": "fd8fc604e48fde9c12234cad3c189951065e417e5ad01153a0a53741d18b1e5c"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/contracts/sealed.py",
+      "sha256": "e10ca88d325f7f7bc87893b127053287c9bcc9ae22b78486780f20b58c43e9a8"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/contracts/signing.py",
+      "sha256": "64c39cef195e398622b7af12d002b40f980463888a89e823e17ffa1ebbd98aef"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/dataset.py",
+      "sha256": "1345b575d84bd2eaa8715a385f19943abf43c6aedae1ecd161daf6b696203dbd"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/eval/__init__.py",
+      "sha256": "d073719406ddf67b320a304ff989d0337b604e789882deaddf048c4c9132cb3a"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/eval/models.py",
+      "sha256": "0a7ba3014cef76b7f98c920bf32312ed27780fc531b9d764fe571e8cd8ca105e"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/failure_labels.py",
+      "sha256": "427fc2133e225d254b4bf6e61924c780347a20b457263853189212844dd6ef6c"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/leakage.py",
+      "sha256": "bc8a4d8b5e53497da4ae57897abe2883a36f1f92a942bb7f55998e713c5dd707"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/manifest.py",
+      "sha256": "a7aa4000611f98cc013b7d542db6c79804775557b44b66a8f6bdb01aaf449991"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/py.typed",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/sanitize.py",
+      "sha256": "51cfce0250744700fe57dbe831999c3558285856907aa11c2fe69f145fce2d10"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/schemas/analysis.schema.json",
+      "sha256": "c19283fcc72d4031f23575705673a3f396cd92fc047cf6b9542220ea899cdacd"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/schemas/c1_evaluation_plan.schema.json",
+      "sha256": "64ff1dc2cc1de6c9234af9629a99ed4473d3e2aaac57f73372cf84747e1e6f2f"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/schemas/c2_run_record.schema.json",
+      "sha256": "3ec61bcc8ebfb8d563f70f518a70e4fc04ad709bb2dfc7bad4e353cb834dca51"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/schemas/c3_artifact_tree.schema.json",
+      "sha256": "bce6bab03962c3bbf4f166e522108cf737b98ec505aeab7886429c758b7d8cc4"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/schemas/c4_result.schema.json",
+      "sha256": "2799005921ca2f5294b1bd25da3775f6b6e699dc1f53f9b9efdffdac33e3d936"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/schemas/c6_sealed_pointer.schema.json",
+      "sha256": "b3c9a85ee8f09d1ed6c37143478a3aea46cf3401c2fe62474d30902f10b71db2"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/schemas/c7_hardware.schema.json",
+      "sha256": "1c2b0f958f38b35d185cbb36592306c9ad82f7796df8fb752604942762941391"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/schemas/c7_worker_heartbeat.schema.json",
+      "sha256": "22da4b492af54d09a604691a411ef24c36d0efbb9070b7ddfb949684a0871ff0"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/schemas/c8_release_evidence.schema.json",
+      "sha256": "d94b3f4db161d1a407ed6460fc3f9dbfc1e4edffba98b98bc37397497fccf31c"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/schemas/forecast.schema.json",
+      "sha256": "b6038a70f2b6369fce28ae50bb09e5a7f1f127e57c4e26aaa9b66ecce425e023"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/schemas/manifest.schema.json",
+      "sha256": "5b669ec7cb27cf656076343b744029679fda7dc213471f91e161cd9c5a2c83ae"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/schemas/sim_scenario.schema.json",
+      "sha256": "b6f96a830d97dc5fb9f93482dbaec3f5890e09da63c9c81f08b92fc05c3d43b8"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/schemas/submission.schema.json",
+      "sha256": "72c80766c3385709c5c498cc4a04ca5654107aaf73a36cb7b930022825c2fa36"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/schemas/taskcard.schema.json",
+      "sha256": "b01f71a246c6307bcc50933ee23e678267297b5cc4c5e3e7d21b18dea9f0c1de"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/scoring/__init__.py",
+      "sha256": "7d8ca5e5ced4c96910243c368bd18d268dd7ba9d98e1c4e83a76d77bb5c434ce"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/scoring/_ranking.py",
+      "sha256": "2c8a5835f5a0c078ad5520d6453b768fbfad33fbe16397d94eb2e02491f4c2a3"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/scoring/bootstrap.py",
+      "sha256": "1a3ddd341b713f6c4fc532d4d6a22e3cc5e1b88b85bda2b67b0a385c766e3812"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/scoring/crps.py",
+      "sha256": "c708248f0bcfefb3fb9bd74a3a239a125b438e1b2de448027434c04b93dadcca"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/scoring/factor_replication.py",
+      "sha256": "3cebd829b15e026319ab519e08826aede6ccfb48803e608c3e617188d184c454"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/scoring/faithfulness.py",
+      "sha256": "4da330241aeaf4b4b56fcde72aa73b237d7bb595b484c45de6b19faec8ca7b64"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/scoring/passk.py",
+      "sha256": "cae41bfb92b6a0b8811dcf8a5e2cf470863ac18cebc56ea22d69837b256b8f6d"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/scoring/stylized_facts.py",
+      "sha256": "1680e5d95271d3acd9a079fcc42e80818ba16f5f8e57665d4ce2ee21b3708f6a"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/smoke.py",
+      "sha256": "ab54b4b96820bc2d1b69d2d266d93b5d8c2a06ff2596d85f7651c5d5608683ba"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/taskcard.py",
+      "sha256": "c0c4077a00c7e67b57462de17f0a96cc570d8032fc787f82065be64bffda0db7"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/team_claim.py",
+      "sha256": "d146f365a5d61b51ba887fdc850ebc772f202a004bce2c2cb042f1ebeb088a07"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/track1/__init__.py",
+      "sha256": "9725d4df0740aeb565e1a3c196d675e868f5d55a74755ceb849e6d77795bc4ea"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/track1/harbor.py",
+      "sha256": "b2237cdfa110b8f5f9072666eadc474f5a770213d10853b6b2554c415fecce95"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/track4/__init__.py",
+      "sha256": "de0994b8264f2bd7058cffb6c9a87ae63feaaf43249238bc8b95d5ce4fe175e5"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/track4/harbor_exec.py",
+      "sha256": "da841a391b8a9d7d7b1ad33bd7dc114d9e778ee512d4b8f8411a1374f7456627"
+    },
+    {
+      "path": "vendor/agenthon-toolkit-v2.6.0/common/qfbench2_common/verifier.py",
+      "sha256": "35393ef5af3c9c01318798e9c5f144e53f6614f5e35cf21013215a1d73e0c96d"
+    },
+    {
+      "path": "vendor/track2-60509df/LICENSE",
+      "sha256": "9eb6f69d48a1dd764e8a33f14a584f460d3cec653477c136a95dd6df9c249211"
+    },
+    {
+      "path": "vendor/track2-60509df/THIRD-PARTY-NOTICES.md",
+      "sha256": "94a77864a34e4cd203d28ec9d7d129371c534b41b2da933dbcfbff7341b863e0"
+    },
+    {
+      "path": "vendor/track2-60509df/pyproject.toml",
+      "sha256": "545371d5c904544091c79505268500c4af81946b0e02804a30939a37f78cc2fe"
+    },
+    {
+      "path": "vendor/track2-60509df/qfbench2_track_forecasting/__init__.py",
+      "sha256": "a458b405d10777585706bb67f8b4b76e07cd9e3fa0ed2b679bea24955a91b17d"
+    },
+    {
+      "path": "vendor/track2-60509df/qfbench2_track_forecasting/aggregate.py",
+      "sha256": "f4e4432731321b93c9bad298aab49dbe14f19f2b1699c2a6534ae46a38015e55"
+    },
+    {
+      "path": "vendor/track2-60509df/qfbench2_track_forecasting/cli.py",
+      "sha256": "1dbf2e35c0066e1ae393a615ba43253ccef96a7b53b28379b60b162505309e19"
+    },
+    {
+      "path": "vendor/track2-60509df/qfbench2_track_forecasting/cutoff.py",
+      "sha256": "a9eabfb296f026121d7b75a8b55318a07326dfbe3ae678d87b05c7dd0afd45f9"
+    },
+    {
+      "path": "vendor/track2-60509df/qfbench2_track_forecasting/failures.py",
+      "sha256": "36dc202f6d9de0a794ce3b78acacc606debe96f9dd21b9bed6ef61a050531a56"
+    },
+    {
+      "path": "vendor/track2-60509df/qfbench2_track_forecasting/grid.py",
+      "sha256": "d611da8cd3c4a321012d67ef2ee12a503d38a38bd9abd855619fc215d49ebec0"
+    },
+    {
+      "path": "vendor/track2-60509df/qfbench2_track_forecasting/horizons.py",
+      "sha256": "a1158ec2b408d27a07ebf25f0680c5523df920ed8125115d179a433b7c361b83"
+    },
+    {
+      "path": "vendor/track2-60509df/qfbench2_track_forecasting/limits.py",
+      "sha256": "e50a21ead628b2e0577694725b9d59657fd389a96322da7583f7fd22a31616ce"
+    },
+    {
+      "path": "vendor/track2-60509df/qfbench2_track_forecasting/normalization.py",
+      "sha256": "4570e3052ae611713fe15862a0f79cae7d061562199cc42a7e5e5cef88522b91"
+    },
+    {
+      "path": "vendor/track2-60509df/qfbench2_track_forecasting/official.py",
+      "sha256": "32d756a1f10decdc4fa02a60fc254de627459ad2e95183bac6400a2558bd2ea1"
+    },
+    {
+      "path": "vendor/track2-60509df/qfbench2_track_forecasting/resolution.py",
+      "sha256": "9627c03cd55b60d9638d8902b5a8cee92ef02a5e240c6383cbbbd7febb5a3dd4"
+    },
+    {
+      "path": "vendor/track2-60509df/qfbench2_track_forecasting/scoring.py",
+      "sha256": "6ce2dd8abd06d289a6acbd03328018dad36e91d92c0271b61acd9cd8664b9de5"
+    },
+    {
+      "path": "vendor/track2-60509df/qfbench2_track_forecasting/tail.py",
+      "sha256": "fca32b32924dc1f7df786d22e3e243877a873493cb384d243d433d369833461a"
+    },
+    {
+      "path": "vendor/track2-60509df/qfbench2_track_forecasting/targets.py",
+      "sha256": "df62c54f549580bda34d92b43ba07abc6209095fca8d2e14a08ab0bd390d893e"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0.0",
+  "interface_version": "2.0",
+  "competition_id": "agenthon2026-analysis-verification",
+  "team_id": "team-example-0001",
+  "track": "analysis",
+  "phase": "verification",
+  "category": "api",
+  "image": {
+    "registry": "docker.io",
+    "repository": "team-example/qfb2-analyst",
+    "digest": "sha256:d85d77e637e873a98ab6934aa422b08d343573b949eb4c7b1365fa062eee173c"
+  },
+  "image_access": "public",
+  "models": [
+    {
+      "name": "example-api-model",
+      "version": "example-model-20260401",
+      "training_cutoff": "2026-01",
+      "access": "api",
+      "revision": "r1"
+    }
+  ],
+  "license": "Apache-2.0",
+  "descriptor_digest": "sha256:8328d950466c40baa9835ed36f98a32b9b0a347ef98821105708ca40ed61ea9b"
+}

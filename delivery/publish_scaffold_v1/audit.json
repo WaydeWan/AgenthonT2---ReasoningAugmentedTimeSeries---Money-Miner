@@ -1,0 +1,51 @@
+{
+  "schema_version": "publish-scaffold-audit-v1",
+  "review_date": "2026-10-07",
+  "status": "draft_not_activated_not_published",
+  "authorized_target_repository": "WaydeWan/AgenthonT2---ReasoningAugmentedTimeSeries---Money-Miner",
+  "repo_or_account_permissions_checked": false,
+  "public_web_target_lookup": "Web tool returned internal error; does not establish missing/private/public status. Parent supplied target authorization.",
+  "model_configurations_frozen": false,
+  "actual_image_digests": [],
+  "external_model_calls": 0,
+  "user_credentials_read": false,
+  "publish_attempts": 0,
+  "registry_pull_attempts": 0,
+  "official_runtime_sources": {
+    "toolkit_version": "2.6.0",
+    "track_commit": "60509df4ad0756443f4af8dc9500aed99a995694",
+    "source_files": 127,
+    "lock_sha256": "01641fb2f91cd68711809e6b4ade38877a99bfb33b47ce99fddfbbf1c415fe7d",
+    "basis": "Exact byte hashes of already audited local official runtime snapshots; package Python/JSON/py.typed and required metadata/license only. Not a new full remote snapshot authenticity audit."
+  },
+  "actions": [
+    {"repository": "actions/checkout", "version": "v7.0.1", "sha": "3d3c42e5aac5ba805825da76410c181273ba90b1", "source": "https://github.com/actions/checkout/commit/3d3c42e5aac5ba805825da76410c181273ba90b1"},
+    {"repository": "docker/setup-buildx-action", "version": "v4.0.0", "sha": "4d04d5d9486b7bd6fa91e7baf45bbb4f8b9deedd", "source": "https://github.com/docker/setup-buildx-action/commit/4d04d5d9486b7bd6fa91e7baf45bbb4f8b9deedd"},
+    {"repository": "docker/login-action", "version": "v4.0.0", "sha": "b45d80f862d83dbcd57f89517bcf500b2ab88fb2", "source": "https://github.com/docker/login-action/commit/b45d80f862d83dbcd57f89517bcf500b2ab88fb2"},
+    {"repository": "docker/build-push-action", "version": "v7.2.0", "sha": "f9f3042f7e2789586610d6e8b85c8f03e5195baf", "source": "https://github.com/docker/build-push-action/commit/f9f3042f7e2789586610d6e8b85c8f03e5195baf"},
+    {"repository": "actions/upload-artifact", "version": "v7.0.1", "sha": "043fb46d1a93c77aae656e7c1c64a875d1fc6a0a", "source": "https://github.com/actions/upload-artifact/commit/043fb46d1a93c77aae656e7c1c64a875d1fc6a0a"}
+  ],
+  "capability_findings": [
+    {"finding": "GITHUB_TOKEN in repository workflow supports GHCR publishing with contents:read and packages:write; use source label to associate package.", "source": "https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry"},
+    {"finding": "Personal package first publication defaults private. Public repository does not confer public package visibility. Package admin may need to set Public after initial push, then anonymous pull must independently succeed.", "source": "https://docs.github.com/en/packages/learn-github-packages/configuring-a-packages-access-control-and-visibility"},
+    {"finding": "Existing package without inherited repository permissions may require Manage Actions access granting this repository write; repository/organization action policies can separately disallow actions or token scope.", "source": "https://docs.github.com/en/packages/learn-github-packages/configuring-a-packages-access-control-and-visibility"},
+    {"finding": "Selected setup/login Node24 action releases require modern Actions Runner; draft uses GitHub-hosted ubuntu-24.04, not an unverified self-hosted runner.", "source": "https://github.com/docker/setup-buildx-action/releases/tag/v4.0.0"}
+  ],
+  "remaining_before_real_release": [
+    "Freeze three actually distinct reviewed final configurations after the current numerical comparison; do not encode provisional candidate identities as final.",
+    "Explicit source/config/artifact file allowlist with real SHA values; manual content, cutoff, model disclosure and license review. Exporter is not a universal detector of confidential content or hidden training data.",
+    "Run scaffold offline tests through parent checkpoint; tests were authored but not executed by the subagent.",
+    "Public export review and actual container build/interface smoke; new release Dockerfile/launcher not runtime-certified merely by existing base smoke.",
+    "Apply workflow to authorized public repository and ensure actual account/package permissions; no present permission request.",
+    "Save all three actual build artifacts; a partial publish is not a completed release.",
+    "Set package visibility if needed and perform per-digest anonymous pull using a trusted local Linux Docker daemon with no authenticated upstream mirror.",
+    "Run official g0-g3 smoke against identical immutable digests, then use existing ZIP packaging pipeline with local-only team claim credential."
+  ],
+  "evidence_boundaries": [
+    "No repository upload, workflow activation, GHCR push, package permission change, Docker pull, image execution or model call performed.",
+    "Only frozen direct numerical dependency versions/base digest and source hashes are held. Transitive pip/build backend dependencies, hosted runner and BuildKit image are not fully hash-locked, so byte-reproducibility is not claimed.",
+    "Model source, frozen configs and packaged learned parameter JSON will be public by design. Training history/raw data/private repo/Git metadata are not exported.",
+    "Anonymous verification certifies client-side empty auth, pull success, requested RepoDigest, linux/amd64 and interface label only. It does not certify scoring quality, legality, eligibility, official smoke, server-side proxy behavior or inaccessible account settings."
+  ],
+  "formal_test_entry": "python -m unittest discover -s delivery/publish_scaffold_v1/tests -v"
+}
