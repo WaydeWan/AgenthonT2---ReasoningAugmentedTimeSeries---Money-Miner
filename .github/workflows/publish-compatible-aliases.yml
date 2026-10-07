@@ -1,0 +1,50 @@
+name: Publish schema-compatible image aliases
+on:
+  push:
+    branches: [main]
+    paths: [.github/workflows/publish-compatible-aliases.yml]
+  workflow_dispatch:
+permissions:
+  contents: read
+  packages: write
+concurrency:
+  group: publish-compatible-aliases
+  cancel-in-progress: false
+jobs:
+  alias:
+    if: github.repository == 'WaydeWan/AgenthonT2---ReasoningAugmentedTimeSeries---Money-Miner' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: docker/setup-buildx-action@4d04d5d9486b7bd6fa91e7baf45bbb4f8b9deedd
+        with:
+          version: v0.23.0
+      - uses: docker/login-action@b45d80f862d83dbcd57f89517bcf500b2ab88fb2
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+          logout: true
+      - name: Copy the three frozen indexes without rebuilding
+        shell: bash
+        run: |
+          set -euo pipefail
+          source=ghcr.io/waydewan/agenthont2---reasoningaugmentedtimeseries---money-miner
+          destination=ghcr.io/waydewan/agenthont2-money-miner
+          mkdir alias-records
+          while read -r candidate digest; do
+            docker buildx imagetools create --tag "$destination:dev-oct07-v1-$candidate" "$source@$digest"
+            actual=$(docker buildx imagetools inspect "$destination:dev-oct07-v1-$candidate" --format '{{json .Manifest.Digest}}')
+            test "$actual" = "\"$digest\""
+            printf '{"candidate_id":"%s","source":"%s@%s","destination":"%s@%s","digest_preserved":true}\n' "$candidate" "$source" "$digest" "$destination" "$digest" > "alias-records/$candidate.json"
+          done <<'FROZEN'
+          adaptive sha256:5943ec0d6c44b740641e46c5681e0d947dbe9c33b43a467561e0f6b9da55d90e
+          conservative sha256:12826e18771cb7c82e8a39cf4af7d56e54e5831672070533e01079ac7c36ab9e
+          policy-text sha256:2c9150a099d6a8b2ce675254069ff887e0d7707b8ff8c279b26de08eb6a0e765
+          FROZEN
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+        with:
+          name: compatible-aliases
+          path: alias-records/*.json
+          if-no-files-found: error
+          retention-days: 30
